@@ -14,7 +14,9 @@ public class Bank implements BankInterface {
 	}
 
 	private Account getAccount(Long accountNumber) {
-		// complete the function
+		if(null != accountNumber) {
+      return accounts.get(accountNumber);
+    }
         return null;
 	}
 
